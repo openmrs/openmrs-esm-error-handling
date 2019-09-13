@@ -1,0 +1,54 @@
+{
+  "name": "openmrs-esm-error-handling",
+  "version": "1.0.0",
+  "description": "An ES module to help with error handling",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "lint": "eslint src --ext ts",
+    "typescript": "tsc",
+    "build": "webpack",
+    "test": "jest --passWithNoTests",
+    "prepublishOnly": "npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && pretty-quick --staged && npm run typescript"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openmrs/openmrs-esm-error-handling.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openmrs/openmrs-esm-error-handling/issues"
+  },
+  "browserslist": [
+    "extends browserslist-config-openmrs"
+  ],
+  "homepage": "https://github.com/openmrs/openmrs-esm-error-handling#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "browserslist-config-openmrs": "^1.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-ts-important-stuff": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "husky": "^3.0.5",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
