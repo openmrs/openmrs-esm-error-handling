@@ -1,4 +1,5 @@
 // import { showToast } from '@openmrs/esm-styleguide'
+import "./set-public-path";
 
 export function handleApiError() {
   return incomingResponseErr => {
