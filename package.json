@@ -15,6 +15,7 @@
       "pre-commit": "npm run lint && pretty-quick --staged && npm run typescript"
     }
   },
+  "types": "src/openmrs-esm-error-handling.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openmrs/openmrs-esm-error-handling.git"
