@@ -1,4 +1,4 @@
-// import { showToast } from '@openmrs/esm-styleguide'
+import { showToast } from "@openmrs/esm-styleguide";
 import "./set-public-path";
 
 export function handleApiError() {
@@ -9,6 +9,8 @@ export function handleApiError() {
   };
 }
 
-window.addEventListener("error", info => {
-  // call "showToast()" or similar inside of openmrs-esm-styleguide
-});
+window.onerror = function() {
+  showToast({ description: "Oops! An unexpected error occurred." });
+
+  return false;
+};
