@@ -9,6 +9,7 @@ module.exports = {
     libraryTarget: "system",
     path: path.resolve(__dirname, "dist")
   },
+  mode: "production",
   module: {
     rules: [
       {
