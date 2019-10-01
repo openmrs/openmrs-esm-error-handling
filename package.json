@@ -5,6 +5,10 @@
   "directories": {
     "lib": "dist"
   },
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "start": "webpack-dev-server",
     "lint": "eslint src --ext ts",
