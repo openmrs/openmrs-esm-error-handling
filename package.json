@@ -2,6 +2,9 @@
   "name": "openmrs-esm-error-handling",
   "version": "1.0.0",
   "description": "An ES module to help with error handling",
+  "directories": {
+    "lib": "dist"
+  },
   "scripts": {
     "start": "webpack-dev-server",
     "lint": "eslint src --ext ts",
