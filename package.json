@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --mode=development",
     "lint": "eslint src --ext ts",
     "typescript": "tsc",
     "build": "webpack",
