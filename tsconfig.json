@@ -17,5 +17,5 @@
     "noEmit": true,
     "target": "esnext"
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "__mocks__", "__mocks__"]
 }
