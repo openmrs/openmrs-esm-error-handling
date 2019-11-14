@@ -7,7 +7,8 @@ module.exports = {
   output: {
     filename: "openmrs-esm-error-handling.js",
     libraryTarget: "system",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
+    jsonpFunction: "webpackJsonp_openmrs_esm_error_handling"
   },
   mode: "production",
   module: {
