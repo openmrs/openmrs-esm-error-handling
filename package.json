@@ -1,6 +1,6 @@
 {
   "name": "@openmrs/esm-error-handling",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An ES module to help with error handling",
   "main": "dist/openmrs-esm-error-handling.js",
   "directories": {
